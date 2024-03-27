@@ -70,7 +70,7 @@ def video_feed():
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--model','--weights', type=str, default=ROOT / 'shishir_model.pt', help='model path or triton URL')
+parser.add_argument('--model','--weights', type=str, default=ROOT / 'shishir_Model.pt', help='model path or triton URL')
 parser.add_argument('--source', type=str, default=ROOT / 'data/images', help='source directory for images or videos')
 parser.add_argument('--conf','--conf-thres', type=float, default=0.30, help='object confidence threshold for detection')
 parser.add_argument('--iou', '--iou-thres', type=float, default=0.7, help='intersection over union (IoU) threshold for NMS')
